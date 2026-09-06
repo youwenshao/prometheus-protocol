@@ -1,20 +1,34 @@
 # First session
 
-The human opened this folder and told you to begin. They may have no git, no GitHub, no package manager, and no map. You own the floor. Bootstrap is not the product — it is the floor. Then you ask what they wanted to build.
+The human pasted the kickstart prompt (or opened this folder and told you to begin). They may have no git, no GitHub, no package manager, and no map. You own the floor. Bootstrap is not the product — it is the floor. Then you ask what they wanted to build.
 
 Do not narrate this file. Do not tour the industry. Do not install VS Code.
 
-## 0. Already done?
+## 0. Get the protocol onto this machine
+
+If `AGENTS.md` and `PROTOCOL.md` are already in the current workspace, skip this step.
+
+Otherwise the user kicked off from a blank or unrelated folder. Fetch **https://github.com/youwenshao/prometheus-protocol** without making them operate git:
+
+1. Prefer `~/Projects/prometheus-protocol` if `~/Projects` exists, else `~/prometheus-protocol`. If that path already has `AGENTS.md`, use it.
+2. If `git` exists: `git clone https://github.com/youwenshao/prometheus-protocol.git` into that path.
+3. If `git` does not exist: download `https://github.com/youwenshao/prometheus-protocol/archive/refs/heads/main.zip`, unzip, move the inner folder to that path.
+4. Switch the workspace to that folder if you can (`move_agent_to_root` or equivalent). If you cannot, tell them one sentence: **File → Open Folder…** on that path, then paste the same kickstart prompt again. Stop and wait. Do not continue from a workspace that cannot see these files.
+5. Read `AGENTS.md`, then continue this file from the next section.
+
+Fetching the public protocol is green (read-only). Do not ask. Installing tools after that is still yellow.
+
+## 1. Already done?
 
 If `~/.prometheus/install.json` exists and `user/PROFILE.md` (here or at the recorded personal repo) exists, this is not a first session. Read `skills/session-memory/SKILL.md` and continue. Do not re-install.
 
-## 1. Silent recon
+## 2. Silent recon
 
 Run `scripts/doctor.sh` if you can. If you cannot execute it, perform the same checks by hand. Do not ask the user to run commands they do not understand.
 
 Read the report. Do not recite it.
 
-## 2. One yellow consent
+## 3. One yellow consent
 
 If the baseline is incomplete, ask **once**, consequence language, time estimate. Not a tool list.
 
@@ -26,7 +40,7 @@ If they say no: work with what exists. Record the refusal. State the continuity 
 
 If they say yes: read `skills/bootstrap-machine/SKILL.md` and install in dependency order. Skip what doctor says is already there. One-clause consequence narration as you go. Ledger every step.
 
-## 3. Red: identity
+## 4. Red: identity
 
 After baseline (or if git/`gh` already exist), read `skills/accounts-and-identity/SKILL.md`.
 
@@ -34,7 +48,7 @@ After baseline (or if git/`gh` already exist), read `skills/accounts-and-identit
 - GitHub: recommend it as **continuity for the work**, not professional identity. One yes. Then `gh auth login`. You cannot create the account for them (email, captcha, 2FA). Open the browser, wait, resume. Verify `gh auth status`.
 - If they refuse GitHub: local git only. Say the cost: a new chat or a new machine may not see this work. Continue.
 
-## 4. Personal fork and memory
+## 5. Personal fork and memory
 
 Goal: a repo that is *theirs*, with `user/` filled, so a later chat can continue.
 
@@ -45,7 +59,7 @@ Goal: a repo that is *theirs*, with `user/` filled, so a later chat can continue
 
 Never put secrets in `user/`.
 
-## 5. Install the user layer
+## 6. Install the user layer
 
 This is why the protocol survives the next folder.
 
@@ -59,7 +73,7 @@ If the script cannot run, copy by hand:
 - each `skills/*` → `~/.cursor/skills/prometheus-<name>/`
 - `PROTOCOL.md`, `AGENTS.md`, `START.md`, `UNINSTALL.md`, `VERSION` → `~/.prometheus/`
 
-## 6. Debrief, then the real work
+## 7. Debrief, then the real work
 
 Plain language. No tool catalog.
 
@@ -73,4 +87,4 @@ If they already said the objective at the start, do not make them repeat it. Aft
 
 ## Resume mid-flight
 
-If this chat dies during steps 2–5: the next chat reads the ledger, runs doctor, and continues at the first incomplete step. Do not start over. See `skills/session-memory/SKILL.md`.
+If this chat dies during steps 0–6: the next chat reads the ledger, runs doctor, and continues at the first incomplete step. Do not start over. See `skills/session-memory/SKILL.md`.

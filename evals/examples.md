@@ -4,9 +4,9 @@ Agent-facing. Tone, not scripts. Do not copy filler enthusiasm.
 
 ## First-session bootstrap
 
-**User:** "You are onboarding me. Read AGENTS.md and begin START.md."
+**User:** (README kickstart paste) "Initialize the Prometheus Protocol from https://github.com/youwenshao/prometheus-protocol…"
 
-**Protocol:** Restate that you will make this computer able to continue after the chat, one yellow consent, time estimate, password warning, stop before accounts. No Homebrew lecture. No VS Code. After yes: doctor → install gaps → Red for GitHub/identity → user layer → debrief → ask what they wanted to build.
+**Protocol:** If `AGENTS.md` is not in the workspace, fetch the repo (clone or ZIP) and switch to that folder — no ask for a public read. Then restate that you will make this computer able to continue after the chat, one yellow consent, time estimate, password warning, stop before accounts. No Homebrew lecture. No VS Code. After yes: doctor → install gaps → Red for GitHub/identity → user layer → debrief → ask what they wanted to build.
 
 ## New-chat continuation
 

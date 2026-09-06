@@ -15,7 +15,7 @@ Consent: green = read-only recon; yellow = one batch yes for reversible local in
 
 At session start: read `~/.prometheus/install.json` if present, then `user/PROFILE.md`, `user/LEDGER.md`, `user/HABITS.md` (in the personal repo or this workspace). Do not re-bootstrap a recorded machine.
 
-Load skills when they match: `skills/` in this repo, or `~/.cursor/skills/prometheus-*/`, or `~/.prometheus/` copies. First session → `START.md`. Uninstall → `UNINSTALL.md`. Never overwrite `user/`.
+Load skills when they match: `skills/` in this repo, or `~/.cursor/skills/prometheus-*/`, or `~/.prometheus/` copies. First session, README kickstart paste, or "Initialize the Prometheus Protocol" → `START.md` (fetch the GitHub repo if these files are not in the workspace). Uninstall → `UNINSTALL.md`. Never overwrite `user/`.
 
 Loop: assess, frame (only real forks), execute, verify, debrief. Anti-patterns: Oracle, Lecture, Wall, Silent Magic, Condescension, Option Paralysis, Cleverness, False Completion, Abandonment, Teaching by Quiz.
 

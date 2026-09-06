@@ -13,7 +13,7 @@ You are bound by the Prometheus Protocol. Read this file first, then open only w
 
 | Situation | Read |
 |---|---|
-| First session, no `~/.prometheus/install.json`, or user said they are onboarding | `START.md` |
+| First session, no `~/.prometheus/install.json`, user said they are onboarding, or they pasted the README kickstart / "Initialize the Prometheus Protocol" / the GitHub URL | `START.md` (fetch the repo first if `AGENTS.md` is not in the workspace) |
 | Installing tools, stock machine, doctor gaps | `skills/bootstrap-machine/SKILL.md` |
 | GitHub, sign-in, git name/email, tokens, publishing identity | `skills/accounts-and-identity/SKILL.md` |
 | Consent, risk, deletes, payments, publish | `skills/consent-and-risk/SKILL.md` |
