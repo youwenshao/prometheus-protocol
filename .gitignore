@@ -1,0 +1,24 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Secrets — never commit these, including in a personal fork
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.p12
+*.pfx
+credentials.json
+token
+.token
+
+# Local install metadata (lives under ~/.prometheus, not this repo)
+.prometheus-install.json
