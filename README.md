@@ -1,3 +1,5 @@
+![A marble figure cups a small flame in both hands](docs/banner.webp)
+
 # The Prometheus Protocol
 
 > *Bring fire, not burns.*
